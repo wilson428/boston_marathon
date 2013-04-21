@@ -1,3 +1,8 @@
+console.log(MEDIA_PATH);
+
+var MEDIA_PATH = typeof MEDIA_PATH === "undefined" ? '' : MEDIA_PATH;
+
+
 var width = 590,
     height = 400,
     color = "#0099FF";
@@ -30,7 +35,7 @@ var tooltip = d3.select("body")
     .text("")
     .attr("visibility", "hidden");
     
-d3.json("data/boston_marathon.json", function(error, info) {
+d3.json(MEDIA_PATH + "data/boston_marathon.json", function(error, info) {
 
   loadData(info);
 });
@@ -176,7 +181,7 @@ function loadData(info) {
       
   maps.attr("transform", "translate(-71750, -10950)scale(88,88)");
   
-	d3.json("data/condensed_time.json", function(error, root) {
+	d3.json(MEDIA_PATH + "data/condensed_time.json", function(error, root) {
 		var data = root,
 			c, t, i;
 		
