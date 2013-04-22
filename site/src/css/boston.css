@@ -1,11 +1,10 @@
-body {
-  font: 10px sans-serif;
-}
-
-#main {
+#interactive {
     width: 600px;
     border: 1px solid #999;
     padding: 5px 5px 5px 15px;
+}
+
+#interactive div {
 }
 
 #clock {
@@ -16,14 +15,14 @@ body {
     position: relative;
 }
 
-.buttons {
+#interactive .buttons {
 	display: inline-block;
     line-height: 1.3em;
     margin-bottom: 8px;
     height: 25px;
 }
 
-.control {
+#interactive .control {
     margin-bottom: 2px;
     position: relative;
 }
@@ -40,8 +39,13 @@ body {
 	fill: None;
 }
 
+.legend_title {
+    font-size: 12px;    
+}
+
 .legend_text {
 	fill: #FFF;
+    font-size: 10px;    
 	font-weight: bold;
 }
 
@@ -56,6 +60,7 @@ body {
 }
 
 button {
+   font: 10px sans-serif;   
   -webkit-border-radius:7px;
   -moz-border-radius:7px;
   -border-radius:7px;
